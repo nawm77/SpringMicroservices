@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: customer
+  zipkin:
+    base-url: http://192.168.99.103:9411
   datasource:
     password: '123'
     url: jdbc:postgresql://192.168.99.103:5432/customer

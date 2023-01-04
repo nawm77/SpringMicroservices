@@ -1,10 +1,11 @@
 package rus.ilya;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Data
@@ -20,10 +21,11 @@ public class FraudCheckHistory {
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "fraud_id_sequence")
+            generator = "fraud_id_sequence"
+    )
     private Integer id;
     private Integer customerId;
-    private Boolean isFraud;
+    private Boolean isFraudster;
     private LocalDateTime createdAt;
 
 }

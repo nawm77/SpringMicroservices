@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 @AllArgsConstructor
 public class CustomerService {
-    private final CustomerRepo customerRepo;
+    private final CustomerRepository customerRepo;
     private final RestTemplate restTemplate;
 
     public void registerCustomer(CustomerRegistrationRequest request) {

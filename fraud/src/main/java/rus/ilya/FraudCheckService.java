@@ -15,7 +15,7 @@ public class FraudCheckService {
                 FraudCheckHistory.builder()
                         .customerId(customerId)
                         .createdAt(LocalDateTime.now())
-                        .isFraud(false)
+                        .isFraudster(false)
                         .build()
         );
         return false;
